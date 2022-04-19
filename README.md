@@ -52,3 +52,9 @@ using (var gremlinClient = builder.WithConnectionPoolSettings(connectionPoolSett
    // ... 
 }
 ```
+
+The library can be installed via nuget: https://www.nuget.org/packages/Mathema.Bytecode4CosmosDB/
+
+An example application can be found here: https://github.com/MATHEMA-GmbH/DiningByFriends4CosmosDB
+
+
