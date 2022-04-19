@@ -9,6 +9,8 @@ namespace Mathema.Bytecode4CosmosDB.Deserializer
     internal class ResultToTypeConverter
     {
         private const string TYPE_KEY = "type";
+        private const string VERTEX_TYPE = "vertex";
+        private const string EWDGE_TYPE = "edge";
 
         public static dynamic? Convert(dynamic result)
         {
@@ -25,7 +27,7 @@ namespace Mathema.Bytecode4CosmosDB.Deserializer
 
                     switch (type)
                     {
-                        case "vertex":
+                        case VERTEX_TYPE:
                             objectifiedResult = VertexDeserializer.Objectify(resultDict);
 
                             break;
@@ -51,7 +53,8 @@ namespace Mathema.Bytecode4CosmosDB.Deserializer
             }
             else
             {
-                throw new Exception($"unknown result type {result.GetType()}" );
+                // result is already target type, e.g. g.V().count() will return a long value.
+                objectifiedResult = result;
             }
 
             return objectifiedResult;
