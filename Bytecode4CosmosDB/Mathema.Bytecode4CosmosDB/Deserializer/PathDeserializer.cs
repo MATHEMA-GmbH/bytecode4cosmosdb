@@ -27,10 +27,6 @@ namespace Mathema.Bytecode4CosmosDB.Deserializer
                     objects.Add(ResultToTypeConverter.Convert(item));
             }
 
-            //TODO deserialize all objekt types (vertices, edge and Valuemaps, ...)
-            //objects.Add(new Vertex("trulla1", "person"));
-            //objects.Add(new Vertex("trulla2", "person"));
-
             var path = new Gremlin.Net.Structure.Path(labelList, objects);
 
             return path;
