@@ -30,7 +30,7 @@ jobs:
 
       - name: Prepare summary response
         id: response
-        if: ${{ always() }}
+        if: always()
         run: |
           if [ "$INFERENCE_OUTCOME" = "failure" ]; then
             MESSAGE="Could not generate an AI summary because the inference request failed. Title: $ISSUE_TITLE"
@@ -51,7 +51,7 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
 
       - name: Comment with AI summary
-        if: ${{ always() }}
+        if: always()
         run: |
           gh issue comment $ISSUE_NUMBER --body "$RESPONSE"
         env:
