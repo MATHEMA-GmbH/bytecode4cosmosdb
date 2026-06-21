@@ -27,7 +27,7 @@ jobs:
         uses: actions/ai-inference@v2
         with:
           provider: copilot
-          model: gpt-4.1
+          model: claude-haiku-4.5
           prompt: |
             You are summarizing a GitHub issue.
 
