@@ -1,0 +1,75 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Mathema.Bytecode4CosmosDB/0.1.0-alpha": {
+        "dependencies": {
+          "Gremlin.Net": "3.4.13"
+        },
+        "runtime": {
+          "Mathema.Bytecode4CosmosDB.dll": {}
+        }
+      },
+      "Gremlin.Net/3.4.13": {
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2",
+          "Polly": "7.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gremlin.Net.dll": {
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.13.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/11.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.2.21924"
+          }
+        }
+      },
+      "Polly/7.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/Polly.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.2.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mathema.Bytecode4CosmosDB/0.1.0-alpha": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Gremlin.Net/3.4.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-E6CvFHNYARoTgGx6/LIwknAQnTmpw4JMHQE1dZEop6QAJ1jp96cFNTMuikCSK3poUJOOsl/7HNkzcaGiYKM9Ww==",
+      "path": "gremlin.net/3.4.13",
+      "hashPath": "gremlin.net.3.4.13.nupkg.sha512"
+    },
+    "Newtonsoft.Json/11.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+      "path": "newtonsoft.json/11.0.2",
+      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+    },
+    "Polly/7.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fbtSRyqVSd5AS7O4Pm2Mnw7zKKJk7Z3rOfNnKSTfPkTxM8Z1JJFZzzjqLAOTG6AyUkormSWMO2AhdlygF/384Q==",
+      "path": "polly/7.2.0",
+      "hashPath": "polly.7.2.0.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/bin/Debug/net6.0/Mathema.Bytecode4CosmosDB.deps.json
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/bin/Debug/net6.0/Mathema.Bytecode4CosmosDB.dll
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/bin/Debug/net6.0/Mathema.Bytecode4CosmosDB.pdb
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/Debug/net6.0/Mathema.Bytecode4CosmosDB.csproj.AssemblyReference.cache
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/Debug/net6.0/Mathema.Bytecode4CosmosDB.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/Debug/net6.0/Mathema.Bytecode4CosmosDB.AssemblyInfoInputs.cache
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/Debug/net6.0/Mathema.Bytecode4CosmosDB.AssemblyInfo.cs
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/Debug/net6.0/Mathema.Bytecode4CosmosDB.csproj.CoreCompileInputs.cache
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/Debug/net6.0/Mathema.Bytecode4CosmosDB.sourcelink.json
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/Debug/net6.0/Mathema.Bytecode4CosmosDB.dll
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/Debug/net6.0/refint/Mathema.Bytecode4CosmosDB.dll
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/Debug/net6.0/Mathema.Bytecode4CosmosDB.pdb
+/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/Debug/net6.0/ref/Mathema.Bytecode4CosmosDB.dll

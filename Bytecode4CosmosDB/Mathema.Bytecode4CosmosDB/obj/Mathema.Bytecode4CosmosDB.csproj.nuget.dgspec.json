@@ -1,0 +1,85 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB.csproj": {}
+  },
+  "projects": {
+    "/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB.csproj": {
+      "version": "0.1.0-alpha",
+      "restore": {
+        "projectUniqueName": "/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB.csproj",
+        "projectName": "Mathema.Bytecode4CosmosDB",
+        "projectPath": "/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/bytecode4cosmosdb/bytecode4cosmosdb/Bytecode4CosmosDB/Mathema.Bytecode4CosmosDB/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/runner/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "framework": "net6.0",
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.300"
+      },
+      "frameworks": {
+        "net6.0": {
+          "framework": "net6.0",
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Gremlin.Net": {
+              "target": "Package",
+              "version": "[3.4.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.36, 6.0.36]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
