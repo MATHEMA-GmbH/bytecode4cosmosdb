@@ -51,7 +51,7 @@ jobs:
           ISSUE_TITLE: ${{ github.event.issue.title }}
 
       - name: Comment with AI summary
-        if: always()
+        if: ${{ always() && steps.response.outcome == 'success' }}
         run: |
           gh issue comment $ISSUE_NUMBER --body "$RESPONSE"
         env:
