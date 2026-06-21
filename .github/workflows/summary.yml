@@ -32,9 +32,10 @@ jobs:
         id: response
         if: always()
         run: |
-          if [ "$INFERENCE_OUTCOME" = "failure" ]; then
-            MESSAGE="Could not generate an AI summary because the inference request failed."
-          elif [ -n "$INFERENCE_RESPONSE" ]; then
+          TRIMMED_RESPONSE="$(printf '%s' "$INFERENCE_RESPONSE" | tr -d '[:space:]')"
+          if [ "$INFERENCE_OUTCOME" != "success" ]; then
+            MESSAGE="Could not generate an AI summary because the inference request did not complete successfully."
+          elif [ -n "$TRIMMED_RESPONSE" ]; then
             MESSAGE="$INFERENCE_RESPONSE"
           else
             MESSAGE="Could not generate an AI summary because the model returned an empty response."
