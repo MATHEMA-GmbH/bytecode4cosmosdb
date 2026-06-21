@@ -28,6 +28,28 @@ jobs:
             Title: ${{ github.event.issue.title }}
             Body: ${{ github.event.issue.body }}
 
+      - name: Prepare summary response
+        id: response
+        if: ${{ always() }}
+        run: |
+          if [ "$INFERENCE_OUTCOME" = "failure" ]; then
+            MESSAGE="Could not generate an AI summary because the inference request failed. Title: $ISSUE_TITLE"
+          elif [ -n "$INFERENCE_RESPONSE" ]; then
+            MESSAGE="$INFERENCE_RESPONSE"
+          else
+            MESSAGE="Could not generate an AI summary because the model returned an empty response. Title: $ISSUE_TITLE"
+          fi
+
+          {
+            echo "response<<EOF"
+            echo "$MESSAGE"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+        env:
+          INFERENCE_OUTCOME: ${{ steps.inference.outcome }}
+          INFERENCE_RESPONSE: ${{ steps.inference.outputs.response }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+
       - name: Comment with AI summary
         if: ${{ always() }}
         run: |
@@ -35,4 +57,4 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-          RESPONSE: ${{ (steps.inference.outcome == 'failure' && format('Could not generate an AI summary because the inference request failed. Title: {0}', github.event.issue.title)) || steps.inference.outputs.response || format('Could not generate an AI summary because the model returned an empty response. Title: {0}', github.event.issue.title) }}
+          RESPONSE: ${{ steps.response.outputs.response }}
