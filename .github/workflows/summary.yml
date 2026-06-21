@@ -18,6 +18,7 @@ jobs:
 
       - name: Run AI inference
         id: inference
+        continue-on-error: true
         uses: actions/ai-inference@v1
         with:
           endpoint: https://models.github.ai/orgs/${{ github.repository_owner }}/inference
@@ -28,9 +29,10 @@ jobs:
             Body: ${{ github.event.issue.body }}
 
       - name: Comment with AI summary
+        if: ${{ always() }}
         run: |
           gh issue comment $ISSUE_NUMBER --body "$RESPONSE"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-          RESPONSE: ${{ steps.inference.outputs.response }}
+          RESPONSE: ${{ steps.inference.outputs.response || format('Could not generate an AI summary for this issue. Title: {0}', github.event.issue.title) }}
