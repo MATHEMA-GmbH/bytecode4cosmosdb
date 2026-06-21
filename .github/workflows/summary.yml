@@ -33,11 +33,11 @@ jobs:
         if: always()
         run: |
           if [ "$INFERENCE_OUTCOME" = "failure" ]; then
-            MESSAGE="Could not generate an AI summary because the inference request failed. Title: $ISSUE_TITLE"
+            MESSAGE="Could not generate an AI summary because the inference request failed."
           elif [ -n "$INFERENCE_RESPONSE" ]; then
             MESSAGE="$INFERENCE_RESPONSE"
           else
-            MESSAGE="Could not generate an AI summary because the model returned an empty response. Title: $ISSUE_TITLE"
+            MESSAGE="Could not generate an AI summary because the model returned an empty response."
           fi
 
           {
@@ -48,7 +48,6 @@ jobs:
         env:
           INFERENCE_OUTCOME: ${{ steps.inference.outcome }}
           INFERENCE_RESPONSE: ${{ steps.inference.outputs.response }}
-          ISSUE_TITLE: ${{ github.event.issue.title }}
 
       - name: Comment with AI summary
         if: ${{ always() && steps.response.outcome == 'success' }}

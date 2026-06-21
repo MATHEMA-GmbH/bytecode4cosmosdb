@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A simple library to support bytecode-based requests with Cosmos DB")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0-alpha+db0150ab1956f4fc5bd8b2e4c621ddeefafcdc71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0-alpha+201c14ad327fb8d96fe1a98dd1d829a099798412")]
 [assembly: System.Reflection.AssemblyProductAttribute("Mathema.Bytecode4CosmosDB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Mathema.Bytecode4CosmosDB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.1.0.0")]
